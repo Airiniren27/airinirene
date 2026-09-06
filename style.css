@@ -1,13 +1,21 @@
 body {
-    bbackground-color: #ffffff;
-  background-image: radial-gradient(#000000 15%, transparent 16%),
-                    radial-gradient(#000000 15%, transparent 16%);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
-  color: #111111;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 20px;
+    text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #888888;
+  display: inline-block;
+  
+  /* Panggil animasi */
+  animation: wiggle 2s infinite ease-in-out;
+}
+
+/* Deklarasi Gerakan Goyang */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
 }
 
 h1 {
